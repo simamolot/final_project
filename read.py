@@ -46,7 +46,6 @@ class Search:
             self.connection.close()
 
 
-
 class Title(Search):
     def execute_search(self):
         return super().execute_search('t1.title', 10)
@@ -54,7 +53,7 @@ class Title(Search):
 
 class Actor(Search):
     def execute_search(self):
-        return super().execute_search("CONCAT(t5.first_name, ' ', t5.last_name)",5)
+        return super().execute_search("CONCAT(t5.first_name, ' ', t5.last_name)", 5)
 
 
 class Category(Search):
