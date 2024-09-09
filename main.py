@@ -56,6 +56,12 @@ def main():
         else:
             print(color_text("По вашему запросу ничего не найдено."))
 
+def mul(a, b ):
+    return a * b
+
+a = mul(3,5)
+print(a)
+
 
 if __name__ == "__main__":
     main()
